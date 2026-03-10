@@ -1,0 +1,15 @@
+sequenceDiagram
+    actor 用户
+    participant App as 你的应用
+    participant LLM as 模型
+    participant Tool as 天气 API
+
+    用户->>App: 旧金山天气怎么样？
+    App->>LLM: 发送消息列表（含工具描述）
+    LLM-->>App: stop_reason: tool_use<br/>get_weather("旧金山")
+    Note over App: 执行工具
+    App->>Tool: get_weather("旧金山")
+    Tool-->>App: 15°C，多云
+    App->>LLM: 追加 tool_result，再次调用
+    LLM-->>App: stop_reason: stop<br/>"旧金山现在 15 度，多云……"
+    App->>用户: 旧金山现在 15 度，多云，适合穿薄外套出门。

@@ -1,0 +1,30 @@
+/* Remove sidebar on the custom home page */
+.VPPage .VPDoc .aside {
+  display: none;
+}
+
+/* --- Header layout: title left, search center-expand, toggle right --- */
+.VPNavBar .container {
+  max-width: 100% !important;
+}
+
+.VPNavBar .content {
+  flex: 1;
+  padding-left: 0 !important;
+}
+
+.VPNavBar .content-body {
+  width: 100%;
+}
+
+/* Expand search bar to fill available space */
+.VPNavBarSearch.search {
+  flex: 1;
+  padding-left: 8px;
+}
+
+.DocSearch.DocSearch-Button {
+  width: 100% !important;
+  max-width: 480px;
+  border-radius: 8px !important;
+}
