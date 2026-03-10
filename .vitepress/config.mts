@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
   srcDir: 'posts',
-  base: '/articles/',
+  base: '/',
 
   vite: {
     server: {
