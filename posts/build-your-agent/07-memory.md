@@ -1,6 +1,6 @@
 ---
 title: 记忆系统：让 agent 记住你是谁
-cover: ../../assets/build-your-agent/06-memory/cover.png
+cover: ../../assets/build-your-agent/07-memory/cover.png
 ---
 
 # 记忆系统：让 agent 记住你是谁
@@ -226,7 +226,7 @@ ChatGPT 的 memory 功能、Claude Projects 的知识库——你跟它们聊了
 
 用户提问。把问题也用同一个 Embedding 模型转成向量。在向量数据库里做相似度搜索，找出语义上最接近的几块文档片段。把这些片段拼进 system prompt，让 LLM 基于它们回答问题。
 
-![RAG 流程：问题向量化 → 语义搜索向量数据库 → 检索相关记忆注入 system prompt → LLM 生成回答](../../assets/build-your-agent/06-memory/rag-flow.png)
+![RAG 流程：问题向量化 → 语义搜索向量数据库 → 检索相关记忆注入 system prompt → LLM 生成回答](../../assets/build-your-agent/07-memory/rag-flow.png)
 
 **为什么向量检索有效？**
 

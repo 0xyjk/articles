@@ -86,7 +86,7 @@ Agent 会通读所有历史材料，提炼出隐含的写作模式，生成一�
 
 读取 `agents.md` 了解整体规范 → 读取模板确认五节结构 → 翻阅最近几个月的历史月报，提取行文风格 → 逐一读取 `2026-02/` 下的所有文件，提取本月实际发生的事项 → 按模板结构生成初稿。
 
-![OpenCode 读取素材文件并生成月报的过程](../../assets/ai-agent-in-action/01-party-building-report/opencode-party-building-demo.png)
+![OpenCode 读取素材文件并生成月报的过程](../../assets/ai-agent-in-action/02-party-building-report/opencode-party-building-demo.png)
 
 整个过程大约 2 分钟。生成的文件直接保存到 `历史月报/2026-02/月报.docx`。
 

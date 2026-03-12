@@ -2,7 +2,7 @@
 
 个人技术写作仓库，主要发布至微信公众号，同时部署为静态博客。
 
-- **博客地址**：https://0xyjk.github.io/articles/
+- **博客地址**：https://yangjiankun.com
 
 ## 定位
 
@@ -26,11 +26,15 @@ posts/
     02-llm-basics.md
     ...
   build-your-agent/            ← 从零构建 AI Agent 系列（已发布）
-    00-concept.md
+    01-concept.md
+    02-chatbot.md
     ...
   ai-agent-in-action/          ← 如何用 AI Agent 做事系列（已发布）
-    00-intro.md
+    01-intro.md
+    02-party-building-report.md
     ...
+  ai-insights/                 ← AI Insights 系列（已发布）
+    01-general-agent-eats-vertical.md
 
 assets/
   popularization-of-AI/        ← AI 知识科普系列图片
@@ -38,10 +42,12 @@ assets/
     02-llm-basics/
     ...
   build-your-agent/            ← 从零构建 AI Agent 系列图片
-    00-concept/
+    01-concept/
+    02-chatbot/
     ...
   ai-agent-in-action/          ← 如何用 AI Agent 做事系列图片
-    00-intro/
+    01-intro/
+    02-party-building-report/
     ...
 
 .vitepress/                    ← VitePress 站点配置与自定义主题
@@ -60,16 +66,15 @@ assets/
 
 ### 文件命名约定
 
-**系列内文章必须带两位序号前缀**，格式为 `<NN>-<slug>.md`：
+**系列内文章必须带两位序号前缀**，格式为 `<NN>-<slug>.md`，序号从 `01` 开始：
 
 ```
 posts/popularization-of-AI/01-ai-evolution-2022-2026.md
 posts/popularization-of-AI/02-llm-basics.md
-posts/build-your-agent/00-concept.md
-posts/build-your-agent/01-chatbot.md
+posts/build-your-agent/01-concept.md
+posts/build-your-agent/02-chatbot.md
 ```
 
-- 序号从 `00` 或 `01` 开始均可，保持系列内统一
 - 对应的 assets 目录名与文章 slug（含序号）保持一致：`assets/popularization-of-AI/02-llm-basics/`
 
 ### 图片路径约定
@@ -77,8 +82,8 @@ posts/build-your-agent/01-chatbot.md
 文章中图片引用使用相对路径，从文章位置出发到仓库根再进入 assets：
 
 ```markdown
-<!-- 文章位于 posts/build-your-agent/00-concept.md -->
-![描述](../../assets/build-your-agent/00-concept/image.png)
+<!-- 文章位于 posts/build-your-agent/01-concept.md -->
+![描述](../../assets/build-your-agent/01-concept/image.png)
 
 <!-- 文章位于 posts/popularization-of-AI/02-llm-basics.md -->
 ![描述](../../assets/popularization-of-AI/02-llm-basics/image.png)
@@ -103,6 +108,7 @@ mmdc \
 | `popularization-of-AI` | AI 知识科普 | 连载中 |
 | `build-your-agent` | 从零构建 AI Agent | 连载中 |
 | `ai-agent-in-action` | 如何用 AI Agent 做事 | 连载中 |
+| `ai-insights` | AI Insights | 连载中 |
 
 ## 写作
 
@@ -115,10 +121,12 @@ mmdc \
 
 ```bash
 npm install          # 安装依赖
-npm run docs:dev     # 构建 + 本地预览
-npm run docs:build   # 仅构建
+npm run docs:dev     # 本地开发
+npm run docs:build   # 构建
+npm run docs:preview # 预览构建产物
 ```
 
-- VitePress 配置：`.vitepress/config.mts`（`srcDir: 'posts'`，`base: '/articles/'`）
+- VitePress 配置：`.vitepress/config.mts`（`srcDir: 'posts'`）
 - 自定义主题：`.vitepress/theme/`（首页博客布局、系列筛选）
+- 自定义域名：`yangjiankun.com`
 - 推送到 main 自动触发 GitHub Actions 部署

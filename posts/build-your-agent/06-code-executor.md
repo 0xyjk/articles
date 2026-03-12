@@ -1,6 +1,6 @@
 ---
 title: 代码执行：让 agent 不再靠猜
-cover: ../../assets/build-your-agent/05-code-executor/cover.png
+cover: ../../assets/build-your-agent/06-code-executor/cover.png
 ---
 
 # 代码执行：让 agent 不再靠猜
@@ -61,12 +61,12 @@ cover: ../../assets/build-your-agent/05-code-executor/cover.png
 > 4. 以今天为基准计算账龄，分组：未到期 / 1-30天 / 31-60天 / 61-90天 / 90天以上
 > 5. 画图：双轴图，柱状表示各账龄段金额合计，折线表示笔数，90天以上的柱子用红色标出
 
-<!-- 📹 视频：assets/build-your-agent/05-code-executor/demo.mov
+<!-- 📹 视频：assets/build-your-agent/06-code-executor/demo.mov
      发布时上传至微信视频号，在此处插入视频组件 -->
 
 agent 写了 5 段代码，依次运行。扫目录找文件、逐个读取合并、清洗去重、标注金额冲突、计算账龄、画图——每段代码的结果留在内存里，下一段直接用。检测出了广州恒基那条金额冲突，单独写进了标注文件。最后出来这张图：
 
-![双轴账龄分布图：柱状表示各账龄段应收金额合计，折线表示对应发票笔数，90天以上的柱子用红色标出](../../assets/build-your-agent/05-code-executor/ar-aging-chart.png)
+![双轴账龄分布图：柱状表示各账龄段应收金额合计，折线表示对应发票笔数，90天以上的柱子用红色标出](../../assets/build-your-agent/06-code-executor/ar-aging-chart.png)
 
 从发出请求到拿到图，不到两分钟。所有数字都是代码算出来的。
 

@@ -1,6 +1,6 @@
 ---
 title: 30 行代码，chatbot 变 agent
-cover: ../../assets/build-your-agent/02-tool-calling/cover.png
+cover: ../../assets/build-your-agent/03-tool-calling/cover.png
 ---
 
 # 30 行代码，chatbot 变 agent
@@ -52,7 +52,7 @@ AI 没有只跑一个 `ls`，而是用了 `find` 加文件类型过滤，精确�
 
 AI 创建了`图片`和`视频`两个文件夹——用中文命名，因为你说的是中文。然后用一条命令把对应格式的文件全部移了进去。
 
-<video src="../../assets/build-your-agent/02-tool-calling/demo.mp4" controls></video>
+<video src="../../assets/build-your-agent/03-tool-calling/demo.mp4" controls></video>
 
 有几件事值得注意：AI 没有被告知该建什么名字的文件夹，它自己推断出来的。它也没有被告知图片是 `.png`、`.jpg`，视频是 `.mov`、`.mp4`——这些都是它根据"图片和视频"这几个字决定的。这是 agent 和脚本的根本区别：脚本只执行你写死的逻辑，agent 能理解意图、自己决定怎么做。
 

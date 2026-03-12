@@ -34,11 +34,11 @@ title: 工具选好，事才好做——用 AI Agent 做事系列开篇
 
 打开之后，你会看到默认的三分布局：左侧是对话历史，中间是文件编辑器，右侧是文件浏览器。这个布局是为写代码设计的，方便边聊边看代码改动。
 
-![OpenCode 默认三分布局](../../assets/ai-agent-in-action/00-intro/layout-three-panel.png)
+![OpenCode 默认三分布局](../../assets/ai-agent-in-action/01-intro/layout-three-panel.png)
 
 如果你不需要写代码，右上角有个布局切换按钮，点一下就能切换到更简洁的对话模式——左侧是工作目录和会话列表，中间是对话区，右侧显示文件变更。这个系列大部分时候我们用这个布局演示。
 
-![切换后的简洁布局](../../assets/ai-agent-in-action/00-intro/layout-simple.png)
+![切换后的简洁布局](../../assets/ai-agent-in-action/01-intro/layout-simple.png)
 
 左侧还有一个重要概念：**工作目录**。OpenCode 的每个会话都绑定一个目录，Agent 的所有操作——读文件、写文件、执行命令——都在这个目录里进行。做不同的任务时，切换到对应的目录就行。
 

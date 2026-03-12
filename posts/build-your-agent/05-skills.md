@@ -1,6 +1,6 @@
 ---
 title: 不写代码，扩展 agent 能力——Skill 系统
-cover: ../../assets/build-your-agent/04-skills/cover.jpg
+cover: ../../assets/build-your-agent/05-skills/cover.jpg
 ---
 
 # 不写代码，扩展 agent 能力——Skill 系统
@@ -119,7 +119,7 @@ agent 的系统指令里有一段所有 skill 的清单，name + description，�
 
 输入框左下角有个 `/` 按钮。点开，或者直接在输入框里打 `/`，弹出 skill 选择器——列出所有可用 skill，支持实时过滤。选中 `doc-summary`，输入框自动填入 `/doc-summary `，追加文件路径，发送。
 
-![skill 选择器弹出，列出已安装的所有 skill：/agent-browser、/ai-sdk、/doc-summary、/docx、/fastapi 等，输入框实时过滤](../../assets/build-your-agent/04-skills/skill-picker.png)
+![skill 选择器弹出，列出已安装的所有 skill：/agent-browser、/ai-sdk、/doc-summary、/docx、/fastapi 等，输入框实时过滤](../../assets/build-your-agent/05-skills/skill-picker.png)
 
 截图里能看到十几个 skill 并排列出——后面会说它们从哪里来。
 
@@ -143,7 +143,7 @@ markitdown /Documents/file-sample_500kB.docx
 
 命令跑完，返回文档的 Markdown 全文。agent 读取内容，按 SKILL.md 里规定的模板生成摘要：
 
-![Terminal 卡片展示 markitdown 命令执行过程，下方输出固定格式的文档摘要，包含文件名、类型、核心内容、关键要点等节](../../assets/build-your-agent/04-skills/demo.png)
+![Terminal 卡片展示 markitdown 命令执行过程，下方输出固定格式的文档摘要，包含文件名、类型、核心内容、关键要点等节](../../assets/build-your-agent/05-skills/demo.png)
 
 每次输出的结构都一样：文件信息、核心内容、关键要点、重要数据、建议阅读章节。不会因为文档内容不同、或者模型当天"心情"不同，就给你换个格式。
 

@@ -83,7 +83,7 @@ npx skills add https://github.com/remotion-dev/skills --skill remotion-best-prac
 
 OpenCode 开始写代码——算法实现、状态记录、React 组件、渲染逻辑，逐一生成，改动的文件实时显示在右侧面板。
 
-![OpenCode 正在生成 Remotion 代码](../../assets/ai-agent-in-action/02-teaching-video-with-remotion/opencode-writing-code.png)
+![OpenCode 正在生成 Remotion 代码](../../assets/ai-agent-in-action/03-teaching-video-with-remotion/opencode-writing-code.png)
 
 **第三步：在浏览器里预览。**
 
@@ -93,7 +93,7 @@ npm run dev
 
 Remotion Studio 在浏览器打开。左侧是组件树，中间是视频预览，底部是时间轴。你可以直接拖动时间轴，在任意帧暂停，逐帧检查动画是否符合预期。
 
-![Remotion Studio 预览界面](../../assets/ai-agent-in-action/02-teaching-video-with-remotion/remotion-studio-preview.png)
+![Remotion Studio 预览界面](../../assets/ai-agent-in-action/03-teaching-video-with-remotion/remotion-studio-preview.png)
 
 ## 不只是算法，也不只是老师
 

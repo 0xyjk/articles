@@ -1,6 +1,6 @@
 ---
 title: 一个协议，接入所有外部服务
-cover: ../../assets/build-your-agent/03-mcp/cover.png
+cover: ../../assets/build-your-agent/04-mcp/cover.png
 ---
 
 # 一个协议，接入所有外部服务
@@ -37,7 +37,7 @@ MCP 发布半年后，几乎所有主流 AI 工具都跟进支持——Claude De
 
 这篇文章结束后，界面会多一个 ⚙️ 按钮。点开它，是 MCP 服务器管理面板：
 
-![MCP 设置弹窗：显示已连接的联网搜索 server（绿色勾），下方列出该 server 暴露的工具名 badge：webSearchPrime](../../assets/build-your-agent/03-mcp/settings-panel.png)
+![MCP 设置弹窗：显示已连接的联网搜索 server（绿色勾），下方列出该 server 暴露的工具名 badge：webSearchPrime](../../assets/build-your-agent/04-mcp/settings-panel.png)
 
 填入一个 MCP server 的 URL，点"添加服务器"——状态先变"连接中"，然后变"已连接"，这个 server 暴露的工具名以 badge 形式列出来。
 
@@ -49,7 +49,7 @@ MCP 发布半年后，几乎所有主流 AI 工具都跟进支持——Claude De
 
 大模型的知识有截止日期，实时天气它回答不了。但接上了联网搜索，agent 会自己去搜：
 
-![对话界面：两张 webSearchPrime 工具卡片，状态均为"已完成"；卡片下方是按天整理的武汉七日天气预报，包含日期、天气状况和气温范围](../../assets/build-your-agent/03-mcp/tool-card.png)
+![对话界面：两张 webSearchPrime 工具卡片，状态均为"已完成"；卡片下方是按天整理的武汉七日天气预报，包含日期、天气状况和气温范围](../../assets/build-your-agent/04-mcp/tool-card.png)
 
 值得注意的是：agent 搜了**两次**。它自己判断一次搜索不够，多搜了一轮来补充信息。这正是 agent loop 的意义——不是你规定它调用几次工具，而是它根据中间结果自己决定。
 

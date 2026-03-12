@@ -29,6 +29,11 @@ const seriesConfig = [
     description: '真实场景下用 AI Agent 做事的经验分享',
     prefix: '/ai-agent-in-action/',
   },
+  {
+    name: 'AI Insights',
+    description: '个人对 AI 行业趋势的思考与判断',
+    prefix: '/ai-insights/',
+  },
 ]
 
 export default createContentLoader('**/*.md', {
@@ -45,7 +50,7 @@ export default createContentLoader('**/*.md', {
           return {
             title: p.frontmatter.title || '',
             url: p.url,
-            index: match ? String(Number(match[1]) + 1).padStart(2, '0') : '',
+            index: match ? String(Number(match[1])).padStart(2, '0') : '',
           }
         }),
     }))

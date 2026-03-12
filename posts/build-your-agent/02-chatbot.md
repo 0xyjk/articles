@@ -1,13 +1,13 @@
 ---
 title: 30 分钟搭一个桌面 AI 助手
-cover: ../../assets/build-your-agent/01-chatbot/cover.png
+cover: ../../assets/build-your-agent/02-chatbot/cover.png
 ---
 
 # 30 分钟搭一个桌面 AI 助手
 
 ---
 
-![一个 Electron 桌面窗口，AI 正在用打字机动画流式输出回复](../../assets/build-your-agent/01-chatbot/demo.png)
+![一个 Electron 桌面窗口，AI 正在用打字机动画流式输出回复](../../assets/build-your-agent/02-chatbot/demo.png)
 
 这是你这篇文章结束时会得到的东西：一个运行在自己电脑上的桌面窗口，你打字，它回答，回答的时候一个字一个字地往外蹦——那种打字机动画效果。
 

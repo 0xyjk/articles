@@ -1,6 +1,6 @@
 ---
 title: 从零理解 AI Agent
-cover: ../../assets/build-your-agent/00-concept/cover.png
+cover: ../../assets/build-your-agent/01-concept/cover.png
 ---
 
 # 从零理解 AI Agent
@@ -23,7 +23,7 @@ cover: ../../assets/build-your-agent/00-concept/cover.png
 
 它不能读你的文件，不能搜索网页，不能发邮件。它唯一能做的事，是根据输入预测输出——把一段文字扔进去，它吐出另一段文字。
 
-![LLM 无法"做"任何事：Text Input 进，Text Output 出，无法直接访问 Internet、File System 或 API](../../assets/build-your-agent/00-concept/llm-limitations.png)
+![LLM 无法"做"任何事：Text Input 进，Text Output 出，无法直接访问 Internet、File System 或 API](../../assets/build-your-agent/01-concept/llm-limitations.png)
 
 但这里有个关键：输出的文字可以是任意格式。包括 JSON，包括结构化指令：
 
@@ -39,7 +39,7 @@ cover: ../../assets/build-your-agent/00-concept/cover.png
 
 执行这张便条是应用层的事。你的代码拿到这段 JSON，调用真正的天气 API，取回结果。然后——关键步骤——把结果告诉模型。告诉的方式是把结果塞进对话历史，让模型在下一次调用时读到它。
 
-![Tool Calling 的本质是一张便条：模型输出 JSON 便条，真正的执行者是应用层代码（Runtime Code）](../../assets/build-your-agent/00-concept/tool-calling-note.png)
+![Tool Calling 的本质是一张便条：模型输出 JSON 便条，真正的执行者是应用层代码（Runtime Code）](../../assets/build-your-agent/01-concept/tool-calling-note.png)
 
 ---
 
@@ -58,7 +58,7 @@ cover: ../../assets/build-your-agent/00-concept/cover.png
 助手：      旧金山现在 15 度，多云，适合穿一件薄外套出门。
 ```
 
-![Tool calling 完整流程：用户发起请求，应用层调用模型，模型返回工具指令，应用层执行工具并把结果回传给模型，模型生成最终回答](../../assets/build-your-agent/00-concept/tool-calling-flow.png)
+![Tool calling 完整流程：用户发起请求，应用层调用模型，模型返回工具指令，应用层执行工具并把结果回传给模型，模型生成最终回答](../../assets/build-your-agent/01-concept/tool-calling-flow.png)
 
 注意第三条消息——`tool_result` 的角色是 `user`，不是 `assistant`。这是因为工具结果是从外部回传的，在模型眼里，它和用户输入的地位一样：都是外部信息。
 
