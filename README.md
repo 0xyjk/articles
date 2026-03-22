@@ -19,6 +19,7 @@ drafts/
   popularization-of-AI/        ← AI 知识科普系列（进行中的草稿）
   build-your-agent/            ← 从零构建 AI Agent 系列（进行中的草稿）
   ai-agent-in-action/          ← 如何用 AI Agent 做事系列（进行中的草稿）
+  understanding-comfyui/       ← 从零理解 ComfyUI 系列（进行中的草稿）
 
 posts/
   popularization-of-AI/        ← AI 知识科普系列（已发布）
@@ -35,6 +36,9 @@ posts/
     ...
   ai-insights/                 ← AI Insights 系列（已发布）
     01-general-agent-eats-vertical.md
+  understanding-comfyui/       ← 从零理解 ComfyUI 系列（已发布）
+    01-why-comfyui-matters.md
+    02-first-principles-of-image-generation.md
 
 assets/
   popularization-of-AI/        ← AI 知识科普系列图片
@@ -49,6 +53,9 @@ assets/
     01-intro/
     02-party-building-report/
     ...
+  understanding-comfyui/       ← 从零理解 ComfyUI 系列图片
+    01-why-comfyui-matters/
+    02-first-principles-of-image-generation/
 
 .vitepress/                    ← VitePress 站点配置与自定义主题
   config.mts
@@ -109,6 +116,7 @@ mmdc \
 | `build-your-agent` | 从零构建 AI Agent | 连载中 |
 | `ai-agent-in-action` | 如何用 AI Agent 做事 | 连载中 |
 | `ai-insights` | AI Insights | 连载中 |
+| `understanding-comfyui` | 从零理解 ComfyUI | 连载中 |
 
 ## 写作
 

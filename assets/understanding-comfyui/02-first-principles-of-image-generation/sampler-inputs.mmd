@@ -1,0 +1,22 @@
+flowchart TD
+    POS["positive CONDITIONING<br/>正向条件"]
+    NEG["negative CONDITIONING<br/>负向条件"]
+    LAT["LATENT<br/>初始 latent"]
+
+    subgraph KS["Generator / Sampler"]
+        direction TB
+        M["MODEL<br/>主扩散模型"]
+        CORE["采样核心<br/>多步去噪"]
+        CTRL["控制参数<br/>seed / steps / cfg / denoise"]
+        ALG["采样策略<br/>sampler_name / scheduler"]
+        M --> CORE
+    end
+
+    OUT["LATENT<br/>采样后的结果"]
+
+    POS --> CORE
+    NEG --> CORE
+    LAT --> CORE
+    CTRL --> CORE
+    ALG --> CORE
+    CORE --> OUT

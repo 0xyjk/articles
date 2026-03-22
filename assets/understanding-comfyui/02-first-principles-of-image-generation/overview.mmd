@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph TXT["文本条件"]
+        P["Prompt"]
+        CTE["Text Encoder"]
+        COND["CONDITIONING"]
+        P --> CTE --> COND
+    end
+
+    subgraph IMG["输入图像"]
+        IN["IMAGE"]
+        VE["Image Encoder"]
+        LAT0["LATENT"]
+        IN --> VE --> LAT0
+    end
+
+    subgraph KS["Generator / Sampler"]
+        direction TB
+        M["MODEL"]
+        CORE["采样核心"]
+        M --> CORE
+    end
+
+    LAT1["LATENT"]
+    VD["Image Decoder"]
+    OUT["IMAGE"]
+
+    COND --> KS
+    LAT0 --> KS
+    KS --> LAT1 --> VD --> OUT
